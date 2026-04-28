@@ -1,0 +1,9 @@
+# version: "3.1"
+services:
+  galeria:
+    container_name: galeria
+    # La imagen debe ser la que tenemos configurada en el Action de GitHub:
+    image: xerezano/galeria:latest
+    ports:
+      - 80:5000
+    restart: always
